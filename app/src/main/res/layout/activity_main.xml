@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F1C40F"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="William Shakespeare"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/william_shakespeare"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_shakespeare"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:textColor="#FFFFFF"
+                android:justificationMode="inter_word"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/tvDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgMacbeth"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/macbeth"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/king_lear"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/tempest"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/as_you_like_it"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/hamlet"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/william_shakespeare_two"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_shakespeare"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LEARN MORE"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#000000"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
